@@ -8,7 +8,7 @@ class MyApp < Sinatra::Base
     erb :index
   end
   
-  post '/index' do
+  post '/results' do
    
     @clothing1 = params{:firstclothing}
     @clothing2 = params{:secondclothing}
@@ -16,7 +16,7 @@ class MyApp < Sinatra::Base
     clothing.add(@clothing1)
     clothing.add(@clothing2)
     @selected = clothing.rselect
-     erb :index
+    erb :results
   end
   
     
