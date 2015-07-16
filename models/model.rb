@@ -6,6 +6,11 @@ class Eightball
 #       @array.push(x)
 #     end
 #   end
+  
+  def intialize()
+    @array = []
+  end
+  
  
   def add(element)
     @array.push(element)
@@ -13,7 +18,7 @@ class Eightball
  
   def print()
     @array.each do |element|
-      push "Your element is:"    
+      puts "Your element is:"    
     end
   end
   
