@@ -8,15 +8,18 @@ class MyApp < Sinatra::Base
     erb :index
   end
   
-  post '/results' do
-    erb :results
+  post '/index' do
+   
     @clothing1 = params{:firstclothing}
     @clothing2 = params{:secondclothing}
-    
-    
-  
-  
-  
+    clothing = Eightball.new
+    clothing.add(@clothing1)
+    clothing.add(@clothing2)
+    @selected = clothing.rselect
+     erb :index
   end
+  
+    
+  
   
 end
