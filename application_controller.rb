@@ -10,7 +10,6 @@ class MyApp < Sinatra::Base
   
   post '/results' do
     puts params[:firstclothing[0]]
-    puts params[:firstclothing[1]]
     shirt = Eightball.new
     pants = Eightball.new
     shirt.add(params[:firstclothing])
