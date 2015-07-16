@@ -1,11 +1,11 @@
 class Eightball
   attr_accessor :array
   
-  def initialize(*array)
-    array.each do |x|
-      @array.push(x)
-    end
-  end
+#   def initialize(*array)
+#     array.each do |x|
+#       @array.push(x)
+#     end
+#   end
  
   def add(element)
     @array.push(element)
