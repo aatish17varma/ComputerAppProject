@@ -1,4 +1,4 @@
-class eightball
+class Eightball
   attr_accessor :array
   
   def initialize(*array)
