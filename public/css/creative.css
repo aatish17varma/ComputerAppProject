@@ -56,7 +56,7 @@ p {
 }
 
 .bg-dark {
-    color: #fff;
+    color: #000000;
     background-color: #222;
 }
 
@@ -237,9 +237,12 @@ header .header-content .header-content-inner p {
         max-width: 80%;
         font-size: 18px;
     }
+  #randomizer{
+    color: #222222
+  }
 }
 
-.section-heading {
+/* .section-heading {
     margin-top: 0;
 }
 
@@ -315,7 +318,7 @@ header .header-content .header-content-inner p {
 
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
         font-size: 22px;
-    }
+    } */
 }
 
 .call-to-action h2 {
