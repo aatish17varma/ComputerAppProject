@@ -9,20 +9,14 @@ class MyApp < Sinatra::Base
   end
   
   post '/results' do
-   puts params
-    @clothing1 = params[:firstclothing]
-    @clothing2 = params[:secondclothing]
-    puts @clothing1
-    puts @clothing2
-    clothing = Eightball.new
-    clothing.add(@clothing1)
-    clothing.add(@clothing2)
-    @selected = clothing.rselect
-    puts @selected
+    puts params[:firstclothing[0]]
+    puts params[:firstclothing[1]]
+    shirt = Eightball.new
+    pants = Eightball.new
+    shirt.add(params[:firstclothing])
+    pants.add(params[:secondclothing])
+    @selected = [shirt.rselect, pants.rselect]
     erb :results
   end
-  
-    
-  
   
 end
