@@ -25,7 +25,7 @@ class Eightball
   
   def rselect
     len = @array.length
-    index = rand(len-1)
+    index = rand(len)
     return @array[index]
   end
 

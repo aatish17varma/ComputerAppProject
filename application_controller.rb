@@ -20,13 +20,11 @@ class MyApp < Sinatra::Base
     plist = params[:secondclothing].split(', ')
     pants = Eightball.new
     
-    plist.each do |x|
-      shirts.add(x)
+    plist.each do |y|
+      pants.add(y)
     end
     
-    @selected = [shirt.rselect, pants.rselect]
-    
-    
+    @selected = [shirts.rselect, pants.rselect]
     
 #     puts params
 #     puts params[:firstclothing]
