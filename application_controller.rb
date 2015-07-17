@@ -39,7 +39,6 @@ class MyApp < Sinatra::Base
 #     pants.add(params[:secondclothing])
 #     @selected = [shirt.rselect, pants.rselect]
     
-    ...
     erb :results
   end
   
